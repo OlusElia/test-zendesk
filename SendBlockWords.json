@@ -1,0 +1,11 @@
+{
+    "hosts" : [
+        "https://mcms.zendesk.com",
+        "https://mcms1517905809.zendesk.com"
+    ],
+    "targetWords" : {
+        "common" : ["いつもお世話になっております。"],
+        "https://mcms.zendesk.com": ["gtr", "test"],
+        "https://mcms1517905809.zendesk.com": ["テスト"]
+    }
+}
