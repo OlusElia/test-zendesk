@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin: *');
 // JSON形式のテキストを生成する
 $json = <<< JSON_DOC
 {
