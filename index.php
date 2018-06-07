@@ -41,5 +41,6 @@ JSON_DOC;
 // JSON用のヘッダを定義して出力
 header("Content-Type: text/javascript; charset=utf-8");
 echo $json;
+response.body = $json;
 exit();
 ?>
