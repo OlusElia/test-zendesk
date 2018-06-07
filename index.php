@@ -4,37 +4,14 @@ header('Access-Control-Allow-Origin: *');
 $json = <<< JSON_DOC
 {
     "hosts" : [
-      {
-        host : "mcms.zendesk.com",
-        id : 1,
-        name : "zendesk本番"
-      },
-      {
-        host : "mcms1517905809.zendesk.com",
-        id : 2,
-        name : "サンドボックス"
-      }
+        "mcms.zendesk.com",
+        "mcms1517905809.zendesk.com"
     ],
-    "targetWords" : [
-      {
-        common : [
-          "いつもお世話になっております。",
-          "ClickM@ilerテクニカルサポート"
-        ]
-      },
-      {
-        mcms.zendesk.com : [
-          "いつもお世話になっております。",
-          "ClickM@ilerテクニカルサポート"
-        ]
-      },
-      {
-        mcms1517905809.zendesk.com : [
-          "いつもお世話になっております。",
-          "ClickM@ilerテクニカルサポート"
-        ]
-      }
-    ]
+    "targetWords" : {
+        "common" : ["いつもお世話になっております。"],
+        "mcms.zendesk.com": ["gtr", "test"],
+        "mcms1517905809.zendesk.com": ["テスト"]
+    }
 }
 JSON_DOC;
 
